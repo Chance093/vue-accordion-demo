@@ -17,6 +17,12 @@
           <p>More Shit</p>
           <p>Even More Shit</p>
         </li>
+        <li className="Accordion_listItem">
+          <p>Vendor Name</p>
+          <p>Other Shit</p>
+          <p>More Shit</p>
+          <p>Even More Shit</p>
+        </li>
       </ul>
     </li>
     <li className="Accordion_list Accordion_list_static">11/24/2023</li>
@@ -90,8 +96,7 @@
   line-height: 1.7rem;
   max-height: 0;
   overflow: hidden;
-  padding-top: 0px;
-  padding-inline: 1rem;
+  padding: 0px;
   transition: max-height 0.3s ease-in-out;
 }
 
@@ -99,6 +104,12 @@
   list-style: none;
   display: flex;
   justify-content: space-between;
+  padding-inline: 10px;
+  border-bottom: 1px solid white;
+}
+
+.Accordion_listItem:last-child {
+  border-bottom: none;
 }
 
 .Accordion_input:checked + .Accordion_label + .Accordion_content {
